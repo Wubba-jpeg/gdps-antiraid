@@ -19,4 +19,4 @@ Simply copy the entire incl/ folder and config/ folder to your gdps
 - removal of account spam bots
 - discord webhook for logs
 - removal of level reupload raids
--# (if those still exist)
+ <small> (if those still exist)</small>
