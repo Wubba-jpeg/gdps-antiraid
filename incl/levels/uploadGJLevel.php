@@ -25,7 +25,9 @@ $levelName = ExploitPatch::charclean($_POST["levelName"]);
 // realcq specifically!!
 if (preg_match('/realcq|furrycq/i', $levelName)) exit("-1");
 $decoded = base64_decode($levelName, true);
-if ($decoded !== false && $decoded !== '') exit("-1");
+if ($decoded !== false && $decoded !== '' && strlen($decoded) > 3 && preg_match('/^[a-zA-Z0-9\s\p{P}]+$/u', $decoded)) {
+    exit("-1");
+}
 //TODO: move description fixing code to a function
 $levelDesc = ExploitPatch::remove($_POST["levelDesc"]);
 $rawDesc = $gameVersion < 20 ? ExploitPatch::translit($levelDesc) : ExploitPatch::translit(ExploitPatch::url_base64_decode($levelDesc));
