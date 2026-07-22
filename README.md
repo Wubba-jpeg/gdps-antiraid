@@ -9,3 +9,6 @@ In its current state, it's pretty barebones. Here's what it does:
 - Blocks levels with "realcq" or "furrycq" in the name
 
 if you want to make changes, feel free to submit a pull request. for feature requests or bug reports, open an issue.
+
+## Setup
+Simply copy the entire incl/ folder and config/ folder to your gdps
