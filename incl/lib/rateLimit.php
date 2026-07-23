@@ -15,12 +15,12 @@ class RateLimit {
      *returns "-1" if limit exceeded, "1" if allowed
      */
     public function checkLimit($custom, $type, $limit = null, $timeColumn = 'uploadDate') {
-        global $db, $discordWebhook;
+        global $db, $discordWebhook, $accperhr, $commentperhr;
         $timeframe = time() - 3600;
         
         if ($custom == 0) {
             if ($type == 1) {
-                $query = $db->prepare("SELECT COUNT(*) FROM accounts WHERE registerDate > :time");
+                $query = $db->prepare("SELECT COUNT(*) FROM users WHERE registerDate > :time");
                 $query->execute([':time' => $timeframe]);
                 $count = $query->fetchColumn();
                 if ($count >= $accperhr) {
