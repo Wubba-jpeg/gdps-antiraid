@@ -1,23 +1,25 @@
 # GDPS antiraid
-Anti-raid for pre-1.9 GDPSes
+Anti-raid for pre-1.9 and 2.0+ GDPSs
 (currently only supports [MegaSa1nt's GMDprivateServer fork](https://github.com/MegaSa1nt/GMDprivateServer)
-In its current state, it's pretty barebones. Here's what it does:
+> [!IMPORTANT]  
+> I highly recommend you activate hcaptcha and turn off the reactivation of accounts (E-mail verification)
+
+this is what this modification does:
 - Adds rate limits (configurable)
 - Blocks invalid UDIDs
 - Blocks users with impossibly high star counts
 - Blocks level names that are valid base64
 - Blocks levels with "realcq" or "furrycq" in the name
+- Logs raid attempts
+- Removes like bots
+- Removes comment bots
+- Removes account spam
 
 if you want to make changes, feel free to submit a pull request. for feature requests or bug reports, open an issue.
 
 ## Setup
-Simply copy the entire incl/ folder and config/ folder to your gdps.
+download the latest [release](https://github.com/Wubba-jpeg/gdps-antiraid/releases) and paste everything in your GDPS folder
 configure everything in config/raidfix.php
 
 ## Planned features
-- removal of like bots
-- removal of comment spam bots
-- removal of account spam bots
-- discord webhook for logs
-- removal of level reupload raids
- <small> (if those still exist)</small>
+- none at this time.
