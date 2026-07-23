@@ -1,10 +1,10 @@
 # GDPS antiraid
-Anti-raid for pre-1.9 and 2.0+ GDPSs
-(currently only supports [MegaSa1nt's GMDprivateServer fork](https://github.com/MegaSa1nt/GMDprivateServer)
+### Anti-raid for pre-1.9 and 2.0+ GDPSs
+### (currently only supports [MegaSa1nt's GMDprivateServer fork](https://github.com/MegaSa1nt/GMDprivateServer)
 > [!IMPORTANT]  
 > I highly recommend you activate hcaptcha and turn off the reactivation of accounts (E-mail verification)
 
-this is what this modification does:
+## This Modification:
 - Adds rate limits (configurable)
 - Blocks invalid UDIDs
 - Blocks users with impossibly high star counts
