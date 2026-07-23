@@ -1,5 +1,5 @@
 # GDPS antiraid
-### Anti-raid for pre-1.9 and 2.0+ GDPSs
+### Anti-raid for 2.0+ GDPSs
 ### (currently only supports [MegaSa1nt's GMDprivateServer fork](https://github.com/MegaSa1nt/GMDprivateServer)
 > [!IMPORTANT]  
 > I highly recommend you activate hcaptcha and turn off the preactivation of accounts (E-mail verification)
