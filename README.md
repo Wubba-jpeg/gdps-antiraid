@@ -18,8 +18,15 @@
 if you want to make changes, feel free to submit a pull request. for feature requests or bug reports, open an issue.
 
 ## Setup
-download the latest [release](https://github.com/Wubba-jpeg/gdps-antiraid/releases) and paste everything in your GDPS folder
-configure everything in config/raidfix.php
+1. download the latest [release](https://github.com/Wubba-jpeg/gdps-antiraid/releases) and paste everything in your GDPS folder
+2. configure everything in config/raidfix.php
+3. Go to your phpmyadmin and entire the following sql:
+ ```sql
+CREATE TABLE likes (
+    likeID INT AUTO_INCREMENT PRIMARY KEY,
+    timestamp INT NOT NULL
+);
+```
 
 ## Planned features
 - none at this time.
