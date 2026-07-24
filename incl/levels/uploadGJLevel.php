@@ -75,7 +75,7 @@ if(isset($_POST["password"])) $password = $_POST["password"] != 0 ? ExploitPatch
 else $password = $gameVersion > 21 ? 1 : 0;
 $id = $gs->getIDFromPost();
 if (stripos($id, 's-') === 0) exit("-1");
-if (strpos($id, 'ffffffff-') !== 0) exit("-1");
+if (strpos($id, 'ffffffff-') !== 0 && strpos($id, '00000000-') !== 0) exit("-1");
 $hostname = $gs->getIP();
 $userID = $gs->getUserID($id, $userName);
 $checkBan = $gs->getPersonBan($id, $userID, 2);
