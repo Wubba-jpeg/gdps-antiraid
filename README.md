@@ -30,3 +30,5 @@ CREATE TABLE likes (
 
 ## Planned features
 - none at this time.
+
+**if you find this useful consider starring for this to be more well known!!**
