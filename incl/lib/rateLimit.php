@@ -20,7 +20,7 @@ class RateLimit {
         
         if ($custom == 0) {
             if ($type == 1) {
-                $query = $db->prepare("SELECT COUNT(*) FROM users WHERE registerDate > :time");
+                $query = $db->prepare("SELECT COUNT(*) FROM accounts WHERE registerDate > :time");
                 $query->execute([':time' => $timeframe]);
                 $count = $query->fetchColumn();
                 if ($count >= $accperhr) {
